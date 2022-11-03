@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+  <title>My Todo App</title>
+
+  <link rel="stylesheet" href="/index.css">
+  <link href=fontsFuzzy_Bubbles/100px rel="stylesheet">
+
+
+</head>
+
+<body>
+                                 <!-- Header  -->
+  <div class="wrapper">
+    <div class='header'>
+      <div class="app-title">
+        <h1>To Do</h1>
+      </div>
+      <div>
+        <img src="/icons/check2-square.svg" class="icon-check">
+      </div>
+      <button class="menu-icon-button">
+        <img src="/icons/three-dots-vertical.svg" class="menu-icon">
+      </button>
+    </div>
+
+                                  <!-- add controls -->
+       
+    <div class="controls">
+      <div class="bars">
+        <input id="add-new-taks" type="text"
+         class="add-new-taks" placeholder= 'Add a new task'/>
+        <input id="date-picker" type="date" class="date-picker" />
+      </div>  
+        <button onclick="addTodo()" class="add-icon-button">
+          <img src="/icons/plus-circle-fill.svg" class="add-icon">
+        </button>
+       </div>
+      <div class="filters">
+          <span class="active" id="all">All</span>
+          <span class="pending" >Pending</span>
+          <span class="completed">Completed</span> 
+      </div>
+
+      <div id="todo-list" class="the-list-divs"></div> 
+</div>
+ <script src="/index.js"></script>
+</body>
+
+</html>
